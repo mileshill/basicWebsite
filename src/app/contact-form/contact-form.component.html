@@ -1,0 +1,19 @@
+<form class="well form-horizontal" [formGroup]="contactForm" (ngSubmit)="doContact($event)">
+  <!-- First Name -->
+   <div>
+    <input formControlName="firstName" type="text" placeholder="first name">
+  </div>
+  <!-- Last Name -->
+   <div>
+    <input formControlName="lastName" type="text" placeholder="last name">
+  </div>
+  <!-- Email -->
+  <div>
+    <input formControlName="email" type="email" placeholder="you@domain.net">
+  </div>
+  <!-- Message -->
+  <div>
+    <input formControlName="message" type="text" placeholder="Tortillas are awesome">
+  </div>
+  <button type="submit" (click)="doSubmitAlert($event)">Contact</button>
+</form>
